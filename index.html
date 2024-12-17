@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat.Web</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <p>Chat.WEB</p>
+        <!-- Notifikasi Icon -->
+        <div id="notification-icon" class="notification-icon" onclick="toggleNotificationHistory()">
+            <i class="fas fa-bell"></i>
+        </div>
+    </header>
+
+    <!-- Histori Notifikasi -->
+    <div id="notification-history" class="notification-history hidden">
+        <h3>Notification History</h3>
+        <ul id="notification-list">
+            <!-- Daftar histori notifikasi akan muncul di sini -->
+        </ul>
+    </div>
+
+    <!-- Chat Container -->
+    <div class="chat-container">
+        <!-- Chat Box -->
+        <div id="chat-box" class="chat-box">
+            <div class="message bot">
+                Hello! How can I assist you today?
+            </div>
+        </div>
+
+        <!-- Chat Input -->
+        <div class="chat-input">
+            <input type="text" id="user-message" placeholder="Type your message...">
+            <button id="send-button">Send</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
