@@ -1,134 +1,67 @@
-/* style.css */
-
-/* Mengatur latar belakang halaman menjadi putih */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: #f4f4f9;
 }
 
-/* Styling untuk header */
 header {
-    background-color: #007bff; /* Biru */
-    color: white;
-    padding: 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-header p {
-    font-size: 24px;
-    font-weight: bold;
-}
-
-/* Styling untuk ikon notifikasi */
-.notification-icon {
-    font-size: 30px;
-    cursor: pointer;
-}
-
-/* Histori Notifikasi */
-.notification-history {
-    position: fixed;
-    top: 0;
-    right: 0;
-    width: 300px;
-    height: 100vh;
-    background-color: #fff;
-    padding: 20px;
-    border-left: 3px solid #007bff;
-    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
-    overflow-y: auto;
-    display: none; /* Secara default tersembunyi */
-}
-
-.notification-history h3 {
-    margin-top: 0;
-}
-
-/* Daftar histori notifikasi */
-#notification-list {
-    list-style-type: none;
-    padding: 0;
-}
-
-#notification-list li {
-    background-color: #f8f9fa;
-    padding: 10px;
-    margin-bottom: 10px;
-    border-radius: 5px;
-}
-
-/* Styling untuk chat-container */
-.chat-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    height: 80vh;
-    padding: 10px;
-    max-width: 600px;
-    margin: 20px auto;
-    background-color: white;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-/* Styling untuk kotak pesan (chat box) */
-.chat-box {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    overflow-y: auto;
-    max-height: 400px;
-    padding: 10px;
-}
-
-/* Styling untuk pesan yang dikirim oleh bot */
-.message.bot {
-    background-color: #e2e3e5;
-    padding: 10px;
-    border-radius: 15px;
-    align-self: flex-start;
-    max-width: 70%;
-}
-
-/* Styling untuk pesan yang dikirim oleh pengguna */
-.message.user {
     background-color: #007bff;
     color: white;
     padding: 10px;
-    border-radius: 15px;
-    align-self: flex-end;
-    max-width: 70%;
+    text-align: center;
 }
 
-/* Styling untuk bagian input chat */
+.chat-container {
+    max-width: 600px;
+    margin: 20px auto;
+    border: 1px solid #ddd;
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.chat-box {
+    height: 400px;
+    overflow-y: auto;
+    padding: 10px;
+}
+
+.message {
+    margin: 10px 0;
+}
+
+.message.user {
+    text-align: right;
+}
+
+.message.bot {
+    text-align: left;
+    color: gray;
+}
+
 .chat-input {
     display: flex;
-    gap: 10px;
-    padding-top: 10px;
+    padding: 10px;
+    border-top: 1px solid #ddd;
 }
 
-/* Styling untuk input pesan */
 .chat-input input {
     flex: 1;
     padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 25px;
-    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
 }
 
-/* Styling untuk tombol kirim */
 .chat-input button {
+    padding: 10px 20px;
+    margin-left: 10px;
+    border: none;
     background-color: #007bff;
     color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 25px;
+    border-radius: 4px;
     cursor: pointer;
-    font-size: 16px;
 }
 
 .chat-input button:hover {
